@@ -71,7 +71,6 @@ function guessLetter(elm) {
   // TODO: Determine if the game is over, and if so,
   // let the player know if they have won or lost
   if (!blanks.includes("_")) {
-    blanks = "YOU WIN";
     document.body.innerHTML = '<p>YOU WIN</p><p><a href="hangman.html">Play again?</a></p>';
   }
   if (wrongGuesses == 7) {
