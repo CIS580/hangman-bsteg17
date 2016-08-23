@@ -66,7 +66,7 @@ function guessLetter(elm) {
       guessedCorrectly = true;
     }
   }
-  (guessedCorrectly) ? drawBlanks() : drawStickMan(wrongGuesses++);
+  (guessedCorrectly) ? drawBlanks() : drawStickMan(++wrongGuesses);
 
   // TODO: Determine if the game is over, and if so,
   // let the player know if they have won or lost
